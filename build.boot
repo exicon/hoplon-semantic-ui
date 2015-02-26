@@ -42,11 +42,12 @@
 	(comp
 		(download-semantic-ui)
 		(sift :move {
-			#"^Semantic-UI-*/dist/semantic.css" "cljsjs/development/semantic-ui.inc.css"
-			#"^Semantic-UI-*/dist/semantic.js" "cljsjs/development/semantic-ui.inc.js"
-			#"^Semantic-UI-*/dist/semantic.min.css" "cljsjs/production/semantic-ui.min.inc.css"
-			#"^Semantic-UI-*/dist/semantic.min.js" "cljsjs/production/semantic-ui.min.inc.js"
-			#"^Semantic-UI-*/dist/themes/" "cljsjs/common/themes/"
+			#"^Semantic-UI-.*/dist/semantic.css" "cljsjs/development/semantic-ui.inc.css"
+			#"^Semantic-UI-.*/dist/semantic.js" "cljsjs/development/semantic-ui.inc.js"
+			#"^Semantic-UI-.*/dist/semantic.min.css" "cljsjs/production/semantic-ui.min.inc.css"
+			#"^Semantic-UI-.*/dist/semantic.min.js" "cljsjs/production/semantic-ui.min.inc.js"
+			#"^Semantic-UI-.*/dist/themes/" "cljsjs/common/themes/"
+			#"semantic-ui.ext.js" "cljsjs/common/semantic-ui.ext.js"
 			})
 		(sift :include #{#"^cljsjs"})
 		(deps-cljs :name "exicon.semantic-ui"

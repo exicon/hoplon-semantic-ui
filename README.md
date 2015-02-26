@@ -23,6 +23,9 @@ and that's it; just use the styles and their javascript functions.
 ## Test & Release
 
 ```
+boot2 package build-jar install          # for Hoplon6
+boot2 package build-jar push-snapshot    # for Hoplon6
+
 boot2 package5 build-jar install
 boot2 package5 build-jar push-snapshot
 ```
