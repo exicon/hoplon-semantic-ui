@@ -23,9 +23,11 @@ and that's it; just use the styles and their javascript functions.
 ## Test & Release
 
 ```
-boot2 package build-jar install
-boot2 package build-jar push-snapshot
+boot2 package5 build-jar install
+boot2 package5 build-jar push-snapshot
 ```
+
+There is a `package` task too for hoplon6 but it doesn't work at the moment.
 
 ## How to update
 
