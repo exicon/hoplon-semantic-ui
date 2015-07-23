@@ -9,7 +9,7 @@
 	'[adzerk.bootlaces :refer :all]
 	'[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +ver+ "1.12.2")
+(def +ver+ "2.0.6")
 (def +version+ (str +ver+ "-SNAPSHOT"))
 (bootlaces! +version+)
 
