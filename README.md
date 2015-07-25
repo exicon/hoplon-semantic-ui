@@ -41,14 +41,12 @@ and that's it; just use the styles and their javascript functions.
 ## Test & Release
 
 ```
-boot package build-jar install          # for Hoplon6 (local repo)
+boot package build-jar install          # for Hoplon6 (install into local maven repo)
 boot package build-jar push-snapshot    # for Hoplon6
 
 boot package5 build-jar install
 boot package5 build-jar push-snapshot
 ```
-
-There is a `package` task too for hoplon6 but it doesn't work at the moment.
 
 ## How to update
 
