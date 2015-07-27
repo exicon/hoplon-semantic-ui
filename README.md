@@ -1,3 +1,5 @@
+[![Clojars Project](http://clojars.org/exicon/hoplon5-semantic-ui/latest-version.svg)](http://clojars.org/exicon/hoplon5-semantic-ui)
+
 # semantic-ui
 
 [Semantic UI][2] [Hoplon][1] dependency.
