@@ -38,3 +38,6 @@ jQuery.fn.state = function () {};
 jQuery.fn.state.settings = {};
 jQuery.fn.visibility = function () {};
 jQuery.fn.visibility.settings = {};
+jQuery.fn.tablesort = function () {};
+jQuery.fn.tablesort.settings = {};
+
