@@ -27,14 +27,6 @@
     :url (str "https://github.com/Semantic-Org/Semantic-UI/archive/" +ver+ ".zip")
     :unzip true))
 
-(deftask download-tablesort []
-  (download
-    :url (str "http://semantic-ui.com/javascript/library/tablesort.js")))
-
-(deftask download-tablesort-min []
-  (download
-    :url (str "http://semantic-ui.com/javascript/library/tablesort.min.js")))
-
 (deftask package5 []
   (task-options! pom { :project 'exicon/hoplon5-semantic-ui })
   (comp
@@ -50,8 +42,6 @@
 (deftask package []
   (comp
     (download-semantic-ui)
-    (download-tablesort)
-    (download-tablesort-min)
     (sift :move
           {
            #"^Semantic-UI-.*/dist/semantic.css" "cljsjs/development/semantic-ui.inc.css"
@@ -60,9 +50,6 @@
            #"^Semantic-UI-.*/dist/semantic.min.js" "cljsjs/production/semantic-ui.min.inc.js"
            #"^Semantic-UI-.*/dist/themes/" "cljsjs/common/themes/"
            #"semantic-ui.ext.js" "cljsjs/common/semantic-ui.ext.js"
-           #"tablesort.js" "cljsjs/development/tablesort.inc.js"
-           #"tablesort.min.js" "cljsjs/production/tablesort.min.inc.js"
-           #"tablesort.ext.js" "cljsjs/common/tablesort.ext.js"
            })
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "exicon.semantic-ui"
