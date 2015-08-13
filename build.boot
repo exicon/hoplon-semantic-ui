@@ -62,6 +62,7 @@
            #"semantic-ui.ext.js" "cljsjs/common/semantic-ui.ext.js"
            #"tablesort.js" "cljsjs/development/tablesort.inc.js"
            #"tablesort.min.js" "cljsjs/production/tablesort.min.inc.js"
+           #"tablesort.ext.js" "cljsjs/common/tablesort.ext.js"
            })
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "exicon.semantic-ui"
